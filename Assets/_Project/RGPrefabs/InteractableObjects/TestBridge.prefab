@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8252572232089513188}
   - component: {fileID: 9202668122652880574}
   - component: {fileID: 2193622802662771447}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TestBridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &9202668122652880574
@@ -147,3 +147,5 @@ MonoBehaviour:
   distance: 13.4
   speed: 2
   isActivated: 0
+  goingUp: 0
+  player: {fileID: 0}

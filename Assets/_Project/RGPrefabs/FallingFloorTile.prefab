@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1671958562704512441}
   - component: {fileID: 1953094912149831471}
   - component: {fileID: 828849715427026872}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FallingFloorTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 16, y: 16}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 9069290726954267705}
   - component: {fileID: 5931243132374929853}
   - component: {fileID: 3771141995369404581}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -113,8 +113,6 @@ namespace Platformer.Mechanics
 
             if (controlEnabled)
             {
-
-
                 if (Input.GetButtonDown("BurstDash") && numberOfJumps > 0 && velocity.x >= 0 && canDash)
                 {
                     print("dash right");
