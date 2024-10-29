@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1766230414937309236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077037263707198238}
+  - component: {fileID: 1135137399910626655}
+  m_Layer: 0
+  m_Name: UI Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077037263707198238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766230414937309236}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1139.2587, y: 636.2535, z: -3.0265334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1135137399910626655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766230414937309236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced33aef9488365478d9dcc50c41dfc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  batteryPercentText: {fileID: 0}
+  BatteryDisplay: {fileID: 0}
+  batteryPercent: 100
+  numberOfBatteries: 1
+  maxSolarCell: 1
+  drainSpeed: 20
+  cellWidthVariable: 50
+  SolarCellRef: {fileID: 8720251170999343623, guid: 33213e3e64eca034895872ecc782af87,
+    type: 3}
+  BatteryChargeRef: {fileID: 0}
+  SolarCellList: []
+  player: {fileID: 0}
+  drainTime: 0.5
+  _sliderBattery: {fileID: 0}
+  _imageBatteryColor: {fileID: 0}
