@@ -17,14 +17,14 @@ namespace _Project.RGScripts.Player
         {
             _player.HandleHorizontalMovement(_settings.AccelerationSpeed, _settings.DecelerationSpeed, _input.MovementInput);
 
-            var absolute = Mathf.Abs(_player.MoveVelocity.x);
-            _player.SetAnimationSpeed(Mathf.InverseLerp(-_settings.RunSpeed,_settings.RunSpeed, absolute));
+            // var absolute = Mathf.Abs(_player.MoveVelocity.x);
+            // _player.SetAnimationSpeed(Mathf.InverseLerp(-_settings.RunSpeed,_settings.RunSpeed, absolute));
             
             if (_input.JumpPressed)
             {
                 _stateMachine.ChangeState(PlayerStateType.Jump);
             }
-            else if (Mathf.Abs(_player.Velocity.x) < 0.2f)
+            else if (Mathf.Abs(_input.MovementInput.x) == 0)
             {
                 _stateMachine.ChangeState(PlayerStateType.Idle);
             }
