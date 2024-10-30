@@ -61,6 +61,10 @@ namespace _Project.RGScripts.Player
             {
                 _stateMachine.ChangeState(PlayerStateType.Jump);
             }
+            else if (!_player.IsGrounded)
+            {
+                _stateMachine.ChangeState(PlayerStateType.Fall);
+            }
         }
 
         public override bool CanTransitionInto()
