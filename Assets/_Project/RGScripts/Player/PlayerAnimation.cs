@@ -4,16 +4,6 @@ using UnityEngine;
 
 namespace _Project.RGScripts.Player
 {
-    public enum PlayerStates
-    {
-        Idle,
-        Walk,
-        Jump,
-        DoubleJump,
-        Fall,
-        Land,
-    }
-    
     [RequireComponent(typeof(Animator))]
     public class PlayerAnimation : MonoBehaviour
     {
@@ -33,35 +23,40 @@ namespace _Project.RGScripts.Player
             _animator = GetComponent<Animator>();
         }
 
-        public void PlayAnimation(PlayerStates playerStates)
+        public void PlayAnimation(PlayerStateType playerStates)
         {
             if (currentState == playerStates.ToString()) return;
 
             switch (playerStates)
             {
-                case PlayerStates.Idle:
+                case PlayerStateType.Idle:
                     _animator.Play(PLAYER_IDLE);
                     break;
-                case PlayerStates.Walk:
+                case PlayerStateType.Move:
                     _animator.Play(PLAYER_WALK);
                     break;
-                case PlayerStates.Jump:
+                case PlayerStateType.Jump:
                     _animator.Play(PLAYER_JUMP);
                     break;
-                case PlayerStates.DoubleJump:
+                case PlayerStateType.DoubleJump:
                     _animator.Play(PLAYER_DOUBLEJUMP);
                     break;
-                case PlayerStates.Fall:
+                case PlayerStateType.Fall:
                     _animator.Play(PLAYER_FALL);
                     break;
-                case PlayerStates.Land:
+                case PlayerStateType.Land:
                     _animator.Play(PLAYER_LAND);
                     break;
                 default:
+                {
+                    Debug.LogError(playerStates.ToString() + " : Is Missing in Animation");
                     throw new ArgumentOutOfRangeException(nameof(playerStates), playerStates, null);
+                }
             }
         }
-
-       
+        public void SetAnimationSpeed(float speed)
+        {
+            _animator.speed = speed;
+        }
     }
 }

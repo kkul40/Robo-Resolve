@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneDatas_byGuid:
     keys:
     - 66c54f144b587d74bb1da1070b7419aa
+    - 2866704fe636381409ca08aa5afd536a
     values:
     - goDatas_byGlobalId:
         keys:
@@ -40,3 +41,18 @@ MonoBehaviour:
           iconNameOrGuid: AvatarMask On Icon
         - colorIndex: 0
           iconNameOrGuid: AvatarMask On Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-2866704fe636381409ca08aa5afd536a-1362234092231395632-6805930596685523429
+        - globalObjectIdString: GlobalObjectId_V1-2-2866704fe636381409ca08aa5afd536a-1895957452-0
+        - globalObjectIdString: GlobalObjectId_V1-2-2866704fe636381409ca08aa5afd536a-472798019-0
+        - globalObjectIdString: GlobalObjectId_V1-2-2866704fe636381409ca08aa5afd536a-1134144109-0
+        values:
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 4
+          iconNameOrGuid: 

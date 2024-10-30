@@ -1,8 +1,5 @@
-﻿using System;
-using Unity.Mathematics;
-using Unity.VisualScripting;
+﻿using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace _Project.RGScripts.Player
 {
@@ -23,7 +20,7 @@ namespace _Project.RGScripts.Player
         private Rigidbody2D _rigidbody2D;
         [SerializeField] private BoxCollider2D _boxCollider2D;
 
-        private PlayerStates currentPlayerState = PlayerStates.Idle;
+        private PlayerStateType currentPlayerState = PlayerStateType.Idle;
         
         private Vector2 moveVelocity;
         private bool isGrounded;
@@ -52,58 +49,58 @@ namespace _Project.RGScripts.Player
             
             switch (currentPlayerState)
             {
-                case PlayerStates.Idle:
+                case PlayerStateType.Idle:
                     HandleMovement(accelation, deceleration, Vector2.zero);
 
                     if (math.abs(_playerInput.MovementInput.x) > 0.1f)
                     {
-                        currentPlayerState = PlayerStates.Walk;
+                        currentPlayerState = PlayerStateType.Move;
                     }
-                    else if (_playerInput.Jump)
+                    else if (_playerInput.JumpPressed)
                     {
                         Jump();
-                        currentPlayerState = PlayerStates.Jump;
+                        currentPlayerState = PlayerStateType.Jump;
                     }
                     break;
-                case PlayerStates.Walk:
+                case PlayerStateType.Move:
                     HandleMovement(accelation, deceleration, _playerInput.MovementInput);
 
                     if (math.abs(_playerInput.MovementInput.x) < 0.1f)
                     {
-                        currentPlayerState = PlayerStates.Idle;
+                        currentPlayerState = PlayerStateType.Idle;
                     }
-                    else if (_playerInput.Jump)
+                    else if (_playerInput.JumpPressed)
                     {
                         Jump();
-                        currentPlayerState = PlayerStates.Jump;
+                        currentPlayerState = PlayerStateType.Jump;
                     }
                     else if (!isGrounded)
                     {
-                        currentPlayerState = PlayerStates.Fall;
+                        currentPlayerState = PlayerStateType.Fall;
                     }
                     break;
-                case PlayerStates.Jump:
+                case PlayerStateType.Jump:
                     HandleMovement(accelation / 2, deceleration / 2, _playerInput.MovementInput);
 
                     if (_rigidbody2D.velocity.y < 0)
                     {
-                        currentPlayerState = PlayerStates.Fall;
+                        currentPlayerState = PlayerStateType.Fall;
                     }
-                    else if (_playerInput.Jump)
+                    else if (_playerInput.JumpPressed)
                     {
                         Jump();
-                        currentPlayerState = PlayerStates.DoubleJump;
+                        currentPlayerState = PlayerStateType.DoubleJump;
                     }
                     break;
-                case PlayerStates.DoubleJump:
+                case PlayerStateType.DoubleJump:
                     HandleMovement(accelation / 2, deceleration / 2, _playerInput.MovementInput);
 
                     if (_rigidbody2D.velocity.y < 0)
                     {
-                        currentPlayerState = PlayerStates.Fall;
+                        currentPlayerState = PlayerStateType.Fall;
                     }
                     break;
-                case PlayerStates.Fall:
+                case PlayerStateType.Fall:
                     
                     HandleMovement(accelation / 2, deceleration / 2, _playerInput.MovementInput);
 
@@ -124,15 +121,15 @@ namespace _Project.RGScripts.Player
                         if (jumpPressedInAir && jumpPressedInAirTimer < 0.15f)
                         {
                             Jump();
-                            currentPlayerState = PlayerStates.Jump;
+                            currentPlayerState = PlayerStateType.Jump;
                         }
                         else if (fallTime > 1)
                         {
-                            currentPlayerState = PlayerStates.Land;
+                            currentPlayerState = PlayerStateType.Land;
                         }
                         else
                         {
-                            currentPlayerState = PlayerStates.Idle;
+                            currentPlayerState = PlayerStateType.Idle;
                         }
                         
                         jumpPressedInAir = false;
@@ -142,7 +139,7 @@ namespace _Project.RGScripts.Player
                         _rigidbody2D.gravityScale = defaultGravity;
                         jumpCount = 0;
                     }
-                    else if (_playerInput.Jump) // Jump Forgiveness
+                    else if (_playerInput.JumpPressed) // Jump Forgiveness
                     {
                         jumpPressedInAir = true;
 
@@ -150,17 +147,17 @@ namespace _Project.RGScripts.Player
                         {
                             _rigidbody2D.gravityScale = defaultGravity;
                             Jump();
-                            currentPlayerState = PlayerStates.DoubleJump;
+                            currentPlayerState = PlayerStateType.DoubleJump;
                         }
                         else if (jumpCount < 2)
                         {
                             _rigidbody2D.gravityScale = defaultGravity;
                             Jump();
-                            currentPlayerState = PlayerStates.DoubleJump;
+                            currentPlayerState = PlayerStateType.DoubleJump;
                         }
                     }
                     break;
-                case PlayerStates.Land:
+                case PlayerStateType.Land:
                     jumpCount = 0;
                     _rigidbody2D.velocity = Vector2.zero;
                     fallTime += Time.deltaTime;
@@ -168,7 +165,7 @@ namespace _Project.RGScripts.Player
                     if (fallTime > 0.5f)
                     {
                         fallTime = 0;
-                        currentPlayerState = PlayerStates.Idle;
+                        currentPlayerState = PlayerStateType.Idle;
                     }
                     break;
             }
