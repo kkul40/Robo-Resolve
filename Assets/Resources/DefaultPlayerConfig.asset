@@ -22,3 +22,4 @@ MonoBehaviour:
   DecelerationSpeed: 10
   RunSpeed: 5
   JumpForce: 20
+  WallSlideSpeed: 1

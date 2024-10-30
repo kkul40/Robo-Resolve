@@ -12,6 +12,7 @@ namespace _Project.RGScripts.Player
         DoubleJump,
         Fall,
         Land,
+        WallSlide,
     }
     
     [RequireComponent(typeof(Player))]
@@ -40,6 +41,7 @@ namespace _Project.RGScripts.Player
                 [PlayerStateType.DoubleJump] = new DoubleJumpState(_player, _player._playerConfig),
                 [PlayerStateType.Fall] = new FallState(_player, _player._playerConfig),
                 [PlayerStateType.Land] = new LandState(_player, _player._playerConfig),
+                [PlayerStateType.WallSlide] = new WallSlideState(_player, _player._playerConfig),
             };
             
             ChangeState(PlayerStateType.Idle);

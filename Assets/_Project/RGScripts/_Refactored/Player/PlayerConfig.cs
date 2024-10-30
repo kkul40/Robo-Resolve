@@ -14,5 +14,6 @@ namespace _Project.RGScripts.Player
         public float DecelerationSpeed = 10;
         public float RunSpeed = 5;
         public float JumpForce = 10;
+        public float WallSlideSpeed = 1;
     }
 }

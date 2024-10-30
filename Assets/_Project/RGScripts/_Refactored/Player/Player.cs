@@ -22,8 +22,7 @@ namespace _Project.RGScripts.Player
         private SpriteRenderer _spriteRenderer;
         [SerializeField] private BoxCollider2D _groundCollider2D;
         
-        public bool IsFacingRight;
-        public bool IsGrounded;
+        public bool IsFacingRight = true;
         public Vector2 MoveVelocity { get; private set; }
         public bool HasDoubleJumped;
 
@@ -36,11 +35,6 @@ namespace _Project.RGScripts.Player
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _collider2D = GetComponent<Collider2D>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
-        }
-
-        private void Update()
-        {
-            GroundCheck();
         }
 
         public void HandleHorizontalMovement(float acceleration, float deceleration, Vector2 moveInput)
@@ -57,29 +51,83 @@ namespace _Project.RGScripts.Player
             
             SetVelocity(new Vector2(MoveVelocity.x, Velocity.y));
         }
+
+        public void HandleVerticleMovement(float acceleration, float deceleration, Vector2 moveInput)
+        {
+            if (moveInput != Vector2.zero)
+            {
+                TurnCheck(moveInput);
+                MoveVelocity = Vector2.Lerp(MoveVelocity, new Vector2(0, moveInput.y) * _playerConfig.WallSlideSpeed, acceleration * Time.deltaTime);
+            }
+            else
+            {
+                MoveVelocity = Vector2.Lerp(MoveVelocity, Vector2.zero, deceleration * Time.deltaTime);
+            }
+            
+            SetVelocity(new Vector2(Velocity.x, MoveVelocity.y));
+        }
         
-        private void GroundCheck()
+        public bool IsGrounded()
         {
             Vector2 boxCastOrigin = new Vector2(GroundCollider.bounds.center.x, GroundCollider.bounds.min.y);
             Vector2 boxCastSize = new Vector2(GroundCollider.bounds.size.x, _playerConfig.RayDetectionLenght);
 
-            var groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, _playerConfig.RayDetectionLenght,
-                _playerConfig.WhatIsGround);
-
+            var groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, _playerConfig.RayDetectionLenght, _playerConfig.WhatIsGround);
             if (groundHit.collider != null)
             {
                 // groundOffTime = 0;
-                IsGrounded = true;
+                return true;
             }
             else
             {
                 // groundOffTime += Time.deltaTime;
-                IsGrounded = false;
+                return false;
             }
             
             Debug.DrawRay(boxCastOrigin, Vector2.down * _playerConfig.RayDetectionLenght);
         }
-        
+
+        public bool IsWalled()
+        {
+            Vector2 wallDedectorOrigin;
+            Vector2 direction = IsFacingRight ? Vector2.right : Vector2.left;
+
+            if (IsFacingRight)
+                wallDedectorOrigin = new Vector2(_collider2D.bounds.max.x, _collider2D.bounds.center.y);
+            else
+                wallDedectorOrigin = new Vector2(_collider2D.bounds.min.x, _collider2D.bounds.center.y);
+            
+            Ray wallRay = new Ray(wallDedectorOrigin, direction * _playerConfig.RayDetectionLenght);
+            Debug.DrawRay(wallRay.origin, wallRay.direction * _playerConfig.RayDetectionLenght, Color.red);
+            
+            var wallHit = Physics2D.Raycast(wallRay.origin, wallRay.direction, _playerConfig.RayDetectionLenght, _playerConfig.WhatIsGround);
+            if (wallHit.collider != null)
+                return true;
+            else
+                return false;
+            
+        }
+
+        public bool IsEdged()
+        {
+            Vector2 edgeDedectorOrigin;
+            Vector2 direction = IsFacingRight ? Vector2.right : Vector2.left;
+
+            if (IsFacingRight)
+                edgeDedectorOrigin = new Vector2(_collider2D.bounds.max.x, _collider2D.bounds.max.y);
+            else
+                edgeDedectorOrigin = new Vector2(_collider2D.bounds.min.x, _collider2D.bounds.max.y);
+            
+            Ray edgeRay = new Ray(edgeDedectorOrigin, direction * _playerConfig.RayDetectionLenght);
+            Debug.DrawRay(edgeRay.origin, edgeRay.direction * _playerConfig.RayDetectionLenght, Color.red);
+
+            var edgeHit = Physics2D.Raycast(edgeRay.origin, edgeRay.direction, _playerConfig.RayDetectionLenght, _playerConfig.WhatIsGround);
+            if (edgeHit.collider != null)
+                return true;
+            else
+                return false;
+        }
+
         private void TurnCheck(Vector2 moveInput)
         {
             if (moveInput.x > 0)
