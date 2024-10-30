@@ -54,7 +54,6 @@ namespace _Project.RGScripts.Player
 
         public void HandleHorizontalMovement(float acceleration, float deceleration, Vector2 moveInput)
         {
-            MoveVelocity = Velocity;
             if (moveInput != Vector2.zero)
             {
                 TurnCheck(moveInput);
@@ -70,7 +69,6 @@ namespace _Project.RGScripts.Player
 
         public void HandleVerticleMovement(float acceleration, float deceleration, Vector2 moveInput)
         {
-            MoveVelocity = Velocity;
             if (moveInput != Vector2.zero)
             {
                 TurnCheck(moveInput);
@@ -175,6 +173,7 @@ namespace _Project.RGScripts.Player
         {
             float maxFallVelocity = 20;
             _rigidbody2D.velocity = new Vector2(x, Mathf.Clamp(y, -maxFallVelocity, maxFallVelocity));
+            MoveVelocity = Velocity;
         }
         public void SetVelocity(Vector2 vector2)
         {

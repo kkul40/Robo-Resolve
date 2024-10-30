@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Project/RGScenes/TitleScreen.unity
     guid: b20e9a5d432465848858b4ae87a3d354
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Project/RGScenes/Tutorial.unity
     guid: 66c54f144b587d74bb1da1070b7419aa
   - enabled: 0
     path: Assets/_Project/RGScenes/RobotGameLevel01.unity
     guid: 9a7b1c0cc5501194b8db2d37afd64268
+  - enabled: 1
+    path: Assets/_Project/RGScenes/Demo.unity
+    guid: 2866704fe636381409ca08aa5afd536a
   m_configObjects: {}
