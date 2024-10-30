@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6954100059860111046}
   - component: {fileID: 7288428363799937991}
   - component: {fileID: 4911741813334224730}
-  - component: {fileID: 1496017840987223656}
+  - component: {fileID: 6835202218420658431}
   m_Layer: 0
   m_Name: New Player 2
   m_TagString: Player
@@ -155,7 +155,6 @@ MonoBehaviour:
   _playerConfig: {fileID: 11400000, guid: 3c6f0faf9766ec647929d431cbedfd20, type: 2}
   _groundCollider2D: {fileID: 8355669270606887404}
   IsFacingRight: 0
-  IsGrounded: 0
   HasDoubleJumped: 0
 --- !u!114 &6954100059860111046
 MonoBehaviour:
@@ -198,8 +197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8980861a1094908acc931d358cb1136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &1496017840987223656
-CircleCollider2D:
+--- !u!70 &6835202218420658431
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -207,7 +206,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1362234092231395632}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 1d3eb284258698b4cb00e612b66856e0, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -230,9 +229,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.04}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Offset: {x: 0, y: -0.07}
+  m_Size: {x: 0.5, y: 0.8}
+  m_Direction: 0
 --- !u!1 &4690398691608498501
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,5 +307,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.2}
+  m_Size: {x: 0.4, y: 0.2}
   m_EdgeRadius: 0

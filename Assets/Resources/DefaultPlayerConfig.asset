@@ -15,11 +15,15 @@ MonoBehaviour:
   DefaultGravityScale: 6
   FallingGravityScale: 8.5
   RayDetectionLenght: 0.1
+  DontHugWallAfterWallJumpDelay: 0.1
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 128
   AccelerationSpeed: 10
   DecelerationSpeed: 10
+  AirAccelerationSpeed: 5
+  AirDecerationSpeed: 5
   RunSpeed: 5
   JumpForce: 20
   WallSlideSpeed: 1
+  MaxEnergy: 100

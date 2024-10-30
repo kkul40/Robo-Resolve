@@ -16,7 +16,7 @@ namespace _Project.RGScripts.Player
 
         public override void FrameUpdate()
         {
-            _player.HandleHorizontalMovement(_settings.AccelerationSpeed / 2, _settings.DecelerationSpeed / 2, _input.MovementInput);
+            _player.HandleHorizontalMovement(_settings.AirAccelerationSpeed, _settings.AirDecerationSpeed, _input.MovementInput);
 
             if (_player.Velocity.y <= 0)
             {

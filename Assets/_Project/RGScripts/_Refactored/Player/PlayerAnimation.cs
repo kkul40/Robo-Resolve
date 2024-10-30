@@ -47,12 +47,12 @@ namespace _Project.RGScripts.Player
                 case PlayerStateType.Land:
                     _animator.Play(PLAYER_LAND);
                     break;
-                // default:
-                // {
-                //     Debug.LogWarning(playerStates.ToString() + " : Is Missing in Animation");
-                //     // throw new ArgumentOutOfRangeException(nameof(playerStates), playerStates, null);
-                //     break;
-                // }
+                default:
+                {
+                    Debug.LogWarning(playerStates.ToString() + " : Is Missing in Animation");
+                    // throw new ArgumentOutOfRangeException(nameof(playerStates), playerStates, null);
+                    break;
+                }
             }
         }
         public void SetAnimationSpeed(float speed)

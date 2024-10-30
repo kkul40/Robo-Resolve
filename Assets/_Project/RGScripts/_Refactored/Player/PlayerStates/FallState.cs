@@ -13,24 +13,20 @@ namespace _Project.RGScripts.Player
         public override void Enter()
         {
             _player.SetAnimation(PlayerStateType.Fall);
+            _player.SetGravity(0);
             fallTime = 0;
         }
 
         public override void FrameUpdate()
         {
-            _player.HandleHorizontalMovement(_settings.AccelerationSpeed / 2, _settings.DecelerationSpeed / 2, _input.MovementInput);
+            _player.HandleHorizontalMovement(_settings.AirAccelerationSpeed, _settings.AirDecerationSpeed, _input.MovementInput);
 
             fallTime += Time.deltaTime;
             
-            if (fallTime < 0.15f)
-            {
-                _player.SetGravity(0);
-            }
-            else
-            {
+            
+            if (fallTime >= 0.15f)
                 _player.SetGravity(_settings.FallingGravityScale);
-            }
-
+            
             
             if (_player.IsGrounded())
             {

@@ -6,7 +6,7 @@ namespace _Project.RGScripts.Player
 {
     [SelectionBase]
     [RequireComponent(typeof(PlayerStateMachine), typeof(PlayerAnimation), typeof(PlayerInput))]
-    [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D), typeof(SpriteRenderer))]
+    [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer))]
     public class Player : MonoBehaviour
     {
         [SerializeField] public PlayerConfig _playerConfig;
@@ -22,9 +22,12 @@ namespace _Project.RGScripts.Player
         private SpriteRenderer _spriteRenderer;
         [SerializeField] private BoxCollider2D _groundCollider2D;
         
+        // Encapsulet Whole this code and leave this script almost blank
         public bool IsFacingRight = true;
         public Vector2 MoveVelocity { get; private set; }
         public bool HasDoubleJumped;
+
+        public float currentEnergy;
 
         private void Awake()
         {
@@ -37,8 +40,21 @@ namespace _Project.RGScripts.Player
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
+        private void Start()
+        {
+            currentEnergy = _playerConfig.MaxEnergy;
+        }
+
+        private void Update()
+        {
+            currentEnergy -= MoveVelocity.magnitude * 0.005f;
+            
+            SetVelocity(Velocity.x, Velocity.y);
+        }
+
         public void HandleHorizontalMovement(float acceleration, float deceleration, Vector2 moveInput)
         {
+            MoveVelocity = Velocity;
             if (moveInput != Vector2.zero)
             {
                 TurnCheck(moveInput);
@@ -54,6 +70,7 @@ namespace _Project.RGScripts.Player
 
         public void HandleVerticleMovement(float acceleration, float deceleration, Vector2 moveInput)
         {
+            MoveVelocity = Velocity;
             if (moveInput != Vector2.zero)
             {
                 TurnCheck(moveInput);
@@ -105,7 +122,6 @@ namespace _Project.RGScripts.Player
                 return true;
             else
                 return false;
-            
         }
 
         public bool IsEdged()
@@ -136,7 +152,7 @@ namespace _Project.RGScripts.Player
                 FlipPlayer(false);
         }
         
-        private void FlipPlayer(bool isFacingRight)
+        public void FlipPlayer(bool isFacingRight)
         {
             _spriteRenderer.flipX = !isFacingRight;
             this.IsFacingRight = isFacingRight;
@@ -157,7 +173,8 @@ namespace _Project.RGScripts.Player
         }
         public void SetVelocity(float x, float y)
         {
-            _rigidbody2D.velocity = new Vector2(x, y);
+            float maxFallVelocity = 20;
+            _rigidbody2D.velocity = new Vector2(x, Mathf.Clamp(y, -maxFallVelocity, maxFallVelocity));
         }
         public void SetVelocity(Vector2 vector2)
         {
@@ -176,6 +193,5 @@ namespace _Project.RGScripts.Player
         {
             _playerAnimation.SetAnimationSpeed(speed);
         }
-        
     }
 }
