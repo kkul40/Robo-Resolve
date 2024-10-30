@@ -77,7 +77,7 @@ namespace _Project.RGScripts.Player
                 IsGrounded = false;
             }
             
-            Debug.DrawLine(boxCastOrigin, boxCastOrigin + Vector2.down * _playerConfig.RayDetectionLenght);
+            Debug.DrawRay(boxCastOrigin, Vector2.down * _playerConfig.RayDetectionLenght);
         }
         
         private void TurnCheck(Vector2 moveInput)

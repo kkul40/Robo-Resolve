@@ -39,6 +39,7 @@ namespace _Project.RGScripts.Player
 
     public class IdleState : PlayerState
     {
+        private Vector2 defaultPosition = Vector2.zero; // Use it stop sliding on slopes
         public IdleState(Player player, PlayerConfig settings) : base(player, settings)
         {
         }
@@ -53,6 +54,7 @@ namespace _Project.RGScripts.Player
         {
             _player.HandleHorizontalMovement(_settings.AccelerationSpeed, _settings.DecelerationSpeed, Vector2.zero);
 
+            Debug.Log(_player.IsGrounded);
             if (Mathf.Abs(_input.MovementInput.x) > 0.1f)
             {
                 _stateMachine.ChangeState(PlayerStateType.Move);
@@ -65,6 +67,11 @@ namespace _Project.RGScripts.Player
             {
                 _stateMachine.ChangeState(PlayerStateType.Fall);
             }
+        }
+
+        public override void Exit()
+        {
+            _player.SetGravity(_settings.DefaultGravityScale);
         }
 
         public override bool CanTransitionInto()
