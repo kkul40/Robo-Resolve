@@ -42,16 +42,17 @@ namespace _Project.RGScripts.Player
                     _animator.Play(PLAYER_DOUBLEJUMP);
                     break;
                 case PlayerStateType.Fall:
-                    _animator.Play(PLAYER_FALL);
+                    _animator.Play(PLAYER_FALL);    
                     break;
                 case PlayerStateType.Land:
                     _animator.Play(PLAYER_LAND);
                     break;
-                default:
-                {
-                    Debug.LogError(playerStates.ToString() + " : Is Missing in Animation");
-                    throw new ArgumentOutOfRangeException(nameof(playerStates), playerStates, null);
-                }
+                // default:
+                // {
+                //     Debug.LogWarning(playerStates.ToString() + " : Is Missing in Animation");
+                //     // throw new ArgumentOutOfRangeException(nameof(playerStates), playerStates, null);
+                //     break;
+                // }
             }
         }
         public void SetAnimationSpeed(float speed)
