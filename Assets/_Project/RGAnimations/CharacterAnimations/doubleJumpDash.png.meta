@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: 760c2bf838d09494c8872f9875f684a3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doubleJumpDash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5526388970ffbd4bba1063b1de8a4ae
+      internalID: -2006547520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637e00ea9fcec284bbfa98dedc30240a
+      internalID: 388927725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa0af7a19dd0894582506442986d5bc
+      internalID: 405254413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b52c08507f47f443a40720a2b4b385d
+      internalID: 576540324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3921e5ea58cb53f40a51c77db7fb6d94
+      internalID: -445021415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6822c290d290d114e96d292b9fc543a0
+      internalID: 71694268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8bda9f10df7ff41b4f2ebc68bb2b16
+      internalID: -1196348552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 396
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3165f220a9d7964d8b3a380cdc4a768
+      internalID: 2136282734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6faad7cd1b4fc140a37a0e60b5a2b5c
+      internalID: -863366649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c755459a28bcaf94db35f60ded740dbd
+      internalID: -339766511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2fa8af7c531e94bb554e5c8eee7815
+      internalID: -1280827685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5351582d32fc24cbbc39ec6242aa29
+      internalID: 734691864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f03569b3dbadb4e947bfed10e12f24
+      internalID: 551578309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7ed7f0297174c40bb2ff6fb0f4473d
+      internalID: 252949398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6a906c5b09dbf438206c7026e02848
+      internalID: -1829783559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_15
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc24dc94426239489fd5f3d8ed7d08b
+      internalID: -570918654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 360
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05f8b937e487e4429eb8df8a2572d85
+      internalID: -1186532828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cf09d9c3bb0f34495c63470ec732f6
+      internalID: 1314072101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 324
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100907ecc7d7494459c20b6361323b16
+      internalID: -1815833570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 324
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c50e8d4dae89fe49a44bd11a058c9fe
+      internalID: 1956874652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39142c89722b5c478a78c151abfe977
+      internalID: -603936055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 288
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d013f6cf56209e543becbf72f6df383a
+      internalID: 1065786188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 288
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb28d781293e1f499dbfae10e6c92ce
+      internalID: -2128705030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586991b0242488e499e4ba97ad22137f
+      internalID: -535542020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8679eb6c15e150a4d8f7ba7548dd60b5
+      internalID: -26341588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8ab6686fb7419499b07cfe941b10ef
+      internalID: -485721478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07073b3814980224bba71fedfb0a05c8
+      internalID: -1830203151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cf6070b48c2dc4396c802d70935d0b
+      internalID: -1267919675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_28
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fdc3f81b9c56e469c381f6eda8d67d
+      internalID: -128009548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_29
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15f6b0f2350e3b469d71652c23aeb03
+      internalID: 14282963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_30
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff8bd5766fdc9e45bfbd93b3c7b21b7
+      internalID: 494349453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_31
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1069598e06b2a4f83a44650a34b59f
+      internalID: 1006275390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_32
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e299ae643982e4d92eb1248412c6c1
+      internalID: -374715869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_33
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cdf5817e8e48f49aa17fa2c3e42b8e
+      internalID: -1786483626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_34
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 252
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53099467af8319e44835d19a72c7665f
+      internalID: 95009640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bc51c6d5bb46f498deac24aa2c0cc0
+      internalID: 1473871336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 216
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1b60fd17086c04da68fb843f42ed6a
+      internalID: -1379589619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 216
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd4831212d36174da1c11635b2f4caa
+      internalID: -368404964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e268b3a72f2a34cb84d92fc84b3687
+      internalID: 2084237373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_39
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 180
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a41012c81091d244a13368e5ba6b69e
+      internalID: -2067490268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac811100a3f4f12448f5cc6d5b6950bd
+      internalID: -2001948071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_41
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee12bc1945e40741a97711e32814718
+      internalID: -879024225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_42
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3364453f88fac547b2e1814f63768eb
+      internalID: 1828018064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_43
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8ba7b23b366dd42b6e76066bb095f0
+      internalID: 1852758119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_44
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1588b7a7d4bcdf48afd4423aaca8dac
+      internalID: 1131785292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_45
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2429e48e6cb65154cb8926be458baf8d
+      internalID: -2087945148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_46
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 144
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe3f4299b0110e4299ec1b391b4c1c7
+      internalID: -196540809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7a3158fd2aaeb4fa8d318f1959ad8c
+      internalID: -956930604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_48
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 108
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e76cbb95aa87b4d9c46ada454394b6
+      internalID: 1850038097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 108
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d37aae7087b37d42874058ca6c1fed2
+      internalID: 1930299456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_50
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 108
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4aa3e77b24bf048a06c7f4a636a5fa
+      internalID: 446437176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d4e0c399efbef48b796b316292324c
+      internalID: -1886508422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_52
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 72
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb839eb9f9e75a94487b00ac4a56bf66
+      internalID: 1498880585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd83483aea6ef64e86b5c35041ef30b
+      internalID: -636276278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_54
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 72
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403b5439897c5784ea8b956915ecc697
+      internalID: 1016406459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80f82cd939d46243925fc28102874b3
+      internalID: -854180867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_56
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fbfc7c7550ed040b6663a8505082bc
+      internalID: -1652446511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_57
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b8737c5ec7e7f47b476da918d7db09
+      internalID: -1872734482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_58
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 36
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8c2e9c428bbba45abb9fcd57800ec0
+      internalID: 1875861424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0957ca739d361ca41b1c6b5f9a8fa5ad
+      internalID: -1173837475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doubleJumpDash_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9753aa783dd6cb44ea29d12810b51574
+      internalID: -1831452143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      doubleJumpDash_0: -2006547520
+      doubleJumpDash_1: 388927725
+      doubleJumpDash_10: -1280827685
+      doubleJumpDash_11: 734691864
+      doubleJumpDash_12: 551578309
+      doubleJumpDash_13: 252949398
+      doubleJumpDash_14: -1829783559
+      doubleJumpDash_15: -570918654
+      doubleJumpDash_16: -1186532828
+      doubleJumpDash_17: 1314072101
+      doubleJumpDash_18: -1815833570
+      doubleJumpDash_19: 1956874652
+      doubleJumpDash_2: 405254413
+      doubleJumpDash_20: -603936055
+      doubleJumpDash_21: 1065786188
+      doubleJumpDash_22: -2128705030
+      doubleJumpDash_23: -535542020
+      doubleJumpDash_24: -26341588
+      doubleJumpDash_25: -485721478
+      doubleJumpDash_26: -1830203151
+      doubleJumpDash_27: -1267919675
+      doubleJumpDash_28: -128009548
+      doubleJumpDash_29: 14282963
+      doubleJumpDash_3: 576540324
+      doubleJumpDash_30: 494349453
+      doubleJumpDash_31: 1006275390
+      doubleJumpDash_32: -374715869
+      doubleJumpDash_33: -1786483626
+      doubleJumpDash_34: 95009640
+      doubleJumpDash_35: 1473871336
+      doubleJumpDash_36: -1379589619
+      doubleJumpDash_37: -368404964
+      doubleJumpDash_38: 2084237373
+      doubleJumpDash_39: -2067490268
+      doubleJumpDash_4: -445021415
+      doubleJumpDash_40: -2001948071
+      doubleJumpDash_41: -879024225
+      doubleJumpDash_42: 1828018064
+      doubleJumpDash_43: 1852758119
+      doubleJumpDash_44: 1131785292
+      doubleJumpDash_45: -2087945148
+      doubleJumpDash_46: -196540809
+      doubleJumpDash_47: -956930604
+      doubleJumpDash_48: 1850038097
+      doubleJumpDash_49: 1930299456
+      doubleJumpDash_5: 71694268
+      doubleJumpDash_50: 446437176
+      doubleJumpDash_51: -1886508422
+      doubleJumpDash_52: 1498880585
+      doubleJumpDash_53: -636276278
+      doubleJumpDash_54: 1016406459
+      doubleJumpDash_55: -854180867
+      doubleJumpDash_56: -1652446511
+      doubleJumpDash_57: -1872734482
+      doubleJumpDash_58: 1875861424
+      doubleJumpDash_59: -1173837475
+      doubleJumpDash_6: -1196348552
+      doubleJumpDash_60: -1831452143
+      doubleJumpDash_7: 2136282734
+      doubleJumpDash_8: -863366649
+      doubleJumpDash_9: -339766511
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
