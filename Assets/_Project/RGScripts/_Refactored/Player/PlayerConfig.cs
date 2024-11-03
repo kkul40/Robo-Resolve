@@ -10,7 +10,8 @@ namespace _Project.RGScripts.Player
         public float DefaultGravityScale = 6;
         public float FallingGravityScale = 8.5f;
         public float RayDetectionLenght = 0.1f;
-        [FormerlySerializedAs("DontHugWallAfterWallJumpTimer")] [FormerlySerializedAs("DontHugWallTimerAfterWallJump")] public float DontHugWallAfterWallJumpDelay = 0.4f;
+        public float DontHugWallAfterWallJumpDelay = 0.4f;
+        public float CanJumpAfterUnGroundedDelay = 0.2f;
         public LayerMask WhatIsGround;
         
         [Header("Player Settings")]

@@ -5,6 +5,8 @@ namespace _Project.RGScripts.Player
     public class FallState : PlayerState
     {
         private float fallTime = 0;
+        private float inputBufferTimer = 0;
+        
         
         public FallState(Player player, PlayerConfig settings) : base(player, settings)
         {
@@ -15,6 +17,7 @@ namespace _Project.RGScripts.Player
             _player.SetAnimation(PlayerStateType.Fall);
             _player.SetGravity(0);
             fallTime = 0;
+            inputBufferTimer = 0;
         }
 
         public override void FrameUpdate()
@@ -22,11 +25,13 @@ namespace _Project.RGScripts.Player
             _player.HandleHorizontalMovement(_settings.AirAccelerationSpeed, _settings.AirDecerationSpeed, _input.MovementInput);
 
             fallTime += Time.deltaTime;
-            
+            inputBufferTimer += Time.deltaTime;
             
             if (fallTime >= 0.15f)
                 _player.SetGravity(_settings.FallingGravityScale);
-            
+
+            if (_input.JumpPressed)
+                inputBufferTimer = 0;
             
             if (_player.IsGrounded())
             {
@@ -34,12 +39,20 @@ namespace _Project.RGScripts.Player
                 {
                     _stateMachine.ChangeState(PlayerStateType.Land);
                 }
+                else if(inputBufferTimer <= _settings.CanJumpAfterUnGroundedDelay)
+                {
+                    _stateMachine.ChangeState(PlayerStateType.Jump);
+                }
                 else
                 {
                     _stateMachine.ChangeState(PlayerStateType.Idle);
                 }
                 
                 _player.HasDoubleJumped = false;
+            }
+            else if (_input.JumpPressed && _stateMachine.PreviousState == PlayerStateType.Move && fallTime <= _settings.CanJumpAfterUnGroundedDelay)
+            {
+                _stateMachine.ChangeState(PlayerStateType.Jump);
             }
             else if (_input.JumpPressed && !_player.HasDoubleJumped)
             {
@@ -53,7 +66,6 @@ namespace _Project.RGScripts.Player
 
         public override void Exit()
         {
-            fallTime = 0;
             _player.SetGravity(_settings.DefaultGravityScale);
         }
 
