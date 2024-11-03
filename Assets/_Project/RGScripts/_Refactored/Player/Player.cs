@@ -48,7 +48,6 @@ namespace _Project.RGScripts.Player
         private void Update()
         {
             currentEnergy -= MoveVelocity.magnitude * 0.005f;
-            
             SetVelocity(Velocity.x, Velocity.y);
         }
 
@@ -137,9 +136,9 @@ namespace _Project.RGScripts.Player
 
             var edgeHit = Physics2D.Raycast(edgeRay.origin, edgeRay.direction, _playerConfig.RayDetectionLenght, _playerConfig.WhatIsGround);
             if (edgeHit.collider != null)
-                return true;
-            else
                 return false;
+            else
+                return true;
         }
 
         private void TurnCheck(Vector2 moveInput)
