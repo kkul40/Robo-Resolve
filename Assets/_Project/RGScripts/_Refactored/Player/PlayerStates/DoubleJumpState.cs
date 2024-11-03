@@ -20,6 +20,10 @@
             {
                 _stateMachine.ChangeState(PlayerStateType.Fall);
             }
+            else if (_input.DashPressed && _player.CanDash)
+            {
+                _stateMachine.ChangeState(PlayerStateType.Dash);
+            }
         }
 
         private void DoubleJump()

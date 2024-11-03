@@ -24,6 +24,7 @@ namespace _Project.RGScripts.Player
         
         public float RunSpeed = 5;
         public float JumpForce = 20;
+        public float DashForce = 20;
         public float WallSlideSpeed = 1;
         public float MaxEnergy = 100;
     }

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/_Project/RGScenes/Tutorial.unity
     guid: 66c54f144b587d74bb1da1070b7419aa
   - enabled: 0
-    path: Assets/_Project/RGScenes/RobotGameLevel01.unity
+    path: Assets/RobotGameAllAssets/RGScenes/RobotGameLevel01.unity
     guid: 9a7b1c0cc5501194b8db2d37afd64268
   - enabled: 1
     path: Assets/_Project/RGScenes/Demo.unity

@@ -24,15 +24,15 @@ public class PowerUpPickupScript : MonoBehaviour
         //GameManager.Instance.AddBatteriesToResetPool(cs);
 
         //only exectue OnPlayerEnter if the player collides with this token.
-        var player = other.gameObject.GetComponent<PlayerMovement>();
-        if (player != null) OnPlayerEnter(player);
+        var _player = other.gameObject.GetComponent<_Project.RGScripts.Player.Player>();
+        if (_player != null) OnPlayerEnter(_player);
     }
 
-    void OnPlayerEnter(PlayerMovement player)
+    void OnPlayerEnter(_Project.RGScripts.Player.Player player)
     {
         if (collected) return;
-        player.canDash = true;
-        SoundManager.Instance.PlaySESound(SoundManager.eSoundChannel.SE01, SoundManager.eSoundEffect.Hurt_Reverb);
+        player.CanDash = true;
+        //SoundManager.Instance.PlaySESound(SoundManager.eSoundChannel.SE01, SoundManager.eSoundEffect.Hurt_Reverb);
         //disable the gameObject and remove it from the controller update list.
         frame = 0;
         sprites = collectedAnimation;

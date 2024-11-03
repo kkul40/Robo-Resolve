@@ -282,11 +282,11 @@ namespace Platformer.Mechanics
             targetVelocity = move * (maxSpeed + modifiedSpeed);
             if (dash && velocity.x > 0)
             {
-                targetVelocity.x = dashSpeed;
+                targetVelocity.x += dashSpeed;
                 targetVelocity.y = 0;
             } else if (dash && velocity.x < 0)
             {
-                targetVelocity.x = -dashSpeed;
+                targetVelocity.x += -dashSpeed;
                 targetVelocity.y = 0;
             }
 
