@@ -12,6 +12,7 @@ namespace _Project.RGScripts.Player
         public float RayDetectionLenght = 0.1f;
         public float DontHugWallAfterWallJumpDelay = 0.4f;
         public float CanJumpAfterUnGroundedDelay = 0.2f;
+        public float CanRightBeforeGroundedDelay = 0.1f;
         public LayerMask WhatIsGround;
         
         [Header("Player Settings")]

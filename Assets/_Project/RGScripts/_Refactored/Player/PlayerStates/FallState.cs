@@ -39,7 +39,7 @@ namespace _Project.RGScripts.Player
                 {
                     _stateMachine.ChangeState(PlayerStateType.Land);
                 }
-                else if(inputBufferTimer <= _settings.CanJumpAfterUnGroundedDelay)
+                else if(inputBufferTimer <= _settings.CanRightBeforeGroundedDelay)
                 {
                     _stateMachine.ChangeState(PlayerStateType.Jump);
                 }
