@@ -16,6 +16,8 @@ MonoBehaviour:
   FallingGravityScale: 8.5
   RayDetectionLenght: 0.1
   DontHugWallAfterWallJumpDelay: 0.1
+  CanJumpAfterUnGroundedDelay: 0.2
+  CanRightBeforeGroundedDelay: 0.1
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 128
