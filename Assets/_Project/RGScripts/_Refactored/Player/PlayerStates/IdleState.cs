@@ -19,7 +19,6 @@ namespace _Project.RGScripts.Player
         {
             _player.HandleHorizontalMovement(_settings.AccelerationSpeed, _settings.DecelerationSpeed, Vector2.zero);
 
-            Debug.Log(_player.IsGrounded());
             if (Mathf.Abs(_input.MovementInput.x) > 0.1f)
             {
                 _stateMachine.ChangeState(PlayerStateType.Move);

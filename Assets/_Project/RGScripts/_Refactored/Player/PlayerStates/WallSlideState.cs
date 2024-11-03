@@ -19,7 +19,7 @@ namespace _Project.RGScripts.Player
 
         public override void FrameUpdate()
         {
-            _player.HandleVerticleMovement(1, 1, new Vector2(_input.MovementInput.x, - _settings.WallSlideSpeed));
+            _player.HandleVerticleMovement(_settings.AirAccelerationSpeed, _settings.AirDecerationSpeed, new Vector2(_input.MovementInput.x, _input.MovementInput.y < 0 ? -_settings.WallSlideSpeed * 5 : -_settings.WallSlideSpeed));
             
             if (_input.JumpPressed)
             {
