@@ -76,14 +76,8 @@ namespace _Project.RGScripts.Player
                 _stateMachine.ChangeState(PlayerStateType.Jump);
             else if (_input.JumpPressed && !_player.HasDoubleJumped)
                 _stateMachine.ChangeState(PlayerStateType.DoubleJump);
-<<<<<<< Updated upstream
-=======
-            }
             else if (_input.DashPressed && _player.CanDash)
-            {
                 _stateMachine.ChangeState(PlayerStateType.Dash);
-            }
->>>>>>> Stashed changes
             else if (_player.IsWalled())
                 _stateMachine.ChangeState(PlayerStateType.WallSlide);
         }
