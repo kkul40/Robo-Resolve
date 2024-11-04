@@ -13,6 +13,7 @@ namespace _Project.RGScripts.Player
         {
             _player.SetAnimation(PlayerStateType.Idle);
             _player.SetGravity(_settings.DefaultGravityScale);
+            _player.CanDash = true;
         }
 
         public override void FrameUpdate()
@@ -26,6 +27,10 @@ namespace _Project.RGScripts.Player
             else if (_input.JumpPressed)
             {
                 _stateMachine.ChangeState(PlayerStateType.Jump);
+            }
+            else if (_input.DashPressed && _player.CanDash)
+            {
+                _stateMachine.ChangeState(PlayerStateType.Dash);
             }
             else if (!_player.IsGrounded())
             {

@@ -27,5 +27,6 @@ MonoBehaviour:
   AirDecerationSpeed: 5
   RunSpeed: 5
   JumpForce: 20
+  DashForce: 20
   WallSlideSpeed: 1
   MaxEnergy: 100

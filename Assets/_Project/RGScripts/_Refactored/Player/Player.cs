@@ -52,7 +52,7 @@ namespace _Project.RGScripts.Player
             SetVelocity(Velocity.x, Velocity.y);
         }
 
-        public void HandleHorizontalMovement(float acceleration, float deceleration, Vector2 moveInput)
+        public void HandleHorizontalMovement(float acceleration, float deceleration, Vector2 moveInput) // This Can Be Use To Apply Dragging.
         {
             if (moveInput != Vector2.zero)
             {
