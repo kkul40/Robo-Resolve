@@ -14,6 +14,7 @@ namespace _Project.RGScripts.Player
         {
             _player.SetAnimation(PlayerStateType.Land);
             _player.SetVelocity(Vector2.zero);
+            _player.CanDash = true;
         }
 
         public override void FrameUpdate()
