@@ -26,6 +26,7 @@ namespace _Project.RGScripts.Player
         public bool IsFacingRight = true;
         public Vector2 MoveVelocity { get; private set; }
         public bool HasDoubleJumped;
+        public bool CanDash;
 
         public float currentEnergy;
 

@@ -26,6 +26,10 @@ namespace _Project.RGScripts.Player
             {
                 _stateMachine.ChangeState(PlayerStateType.DoubleJump);
             }
+            else if (_input.DashPressed && _player.CanDash)
+            {
+                _stateMachine.ChangeState(PlayerStateType.Dash);
+            }
         }
 
         public override bool CanTransitionInto()

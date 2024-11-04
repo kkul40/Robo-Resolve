@@ -23,10 +23,14 @@ namespace _Project.RGScripts.Player
             if (_input.JumpPressed)
             {
                 _stateMachine.ChangeState(PlayerStateType.Jump);
-            }
+            } 
             else if (Mathf.Abs(_input.MovementInput.x) == 0)
             {
                 _stateMachine.ChangeState(PlayerStateType.Idle);
+            }
+            else if (_input.DashPressed && _player.CanDash)
+            {
+                _stateMachine.ChangeState(PlayerStateType.Dash);
             }
             else if (!_player.IsGrounded())
             {

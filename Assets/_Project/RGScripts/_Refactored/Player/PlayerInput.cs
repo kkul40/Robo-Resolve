@@ -10,11 +10,14 @@ namespace _Project.RGScripts.Player
         public bool JumpPressed;
         public bool JumpRelease;
 
+        public bool DashPressed;
+
         private void Update()
         {
             MovementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             JumpPressed = Input.GetKeyDown(KeyCode.Space);
             JumpRelease = Input.GetKeyUp(KeyCode.Space);
+            DashPressed = Input.GetKeyDown(KeyCode.LeftShift);
         }
     }
 }
